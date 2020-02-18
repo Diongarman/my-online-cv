@@ -8,50 +8,57 @@ export const workExperience = [
     location: "Peterborough, United Kingdom",
     blurb:
       "I work as part of the development & solutions team to implement 'web2print' portals.",
+
+    achievments: [
+      "The proprietary Web2Print platform is antiquated and does not easily support adding bespoke functionality to customer UIs that is promised at the sales stage. Came up with the solution of injecting JavaScript into bespoke html components that the platform allows to be added onto the portal UI. This has opened up what can be promised and charged to clients, improved client rentention and as a result improved revenue streams to the organisation as a whole.",
+      "Client data was cleaned manually on our team, decided to start writing VBA and Python scripts to automate data cleaning. This has improved project implementation times on our team.",
+      "Web portals implementated on our team all shared a legacy base CSS stylesheet for numerous pages. The CSS contained many redundant rules and was very unpredictable, making brand styling extremely laborious. Improved the teams styling workflow by learning basic SCSS, rewriting the stylesheet into SCSS files and subsequently getting team members familiar with the technology.",
+      "Because the organisation is a collection of acquired sites, getting IT systems to talk to oneanother is a technical challenge. Have helped design, test & troubleshoot integration middleware software. This has improved business operation organisation wide and enabled profitable revenue streams for all parties involved."
+    ],
     duties: [
       [
         "Data processing, cleaning and migration",
-        " I have used mainly VBA and Python to work with data provided by clients."
+        " Write VBA and Python to work process client data."
       ],
       [
         "E2E Testing",
-        "I have assisted with integration tests between internal and external software systems."
+        "Assist with integration tests between internal and external software systems."
       ],
       [
-        "Middleware design",
-        " I have assisted with designing middleware software that integrates backend systems."
+        "Integration Middleware Design",
+        " Assist in with designing middleware software that integrates backend systems."
       ],
       [
         "Employee Training",
         " I have helped new employees get up to speed, this involved creating explanatory material (PowerPoint, draw,io), writing example code and demonstrating software functionality."
       ],
       [
-        "Frontend development",
-        "I have worked on the UI of multiple web portals, introduced/implemented SCSS to my team, updated functionality on pre-existing portals and designed HTML components."
+        "Frontend Development",
+        "Working on web portal UIs, implementing functionality specified by client and brand consistent styling."
       ],
       [
         "Project management",
-        "I have taken charge of numerous projects, overseeing numerous areas that often extended outside of my area of responsibility."
+        "Take ownership of assigned projects and overseeing numerous areas that often extended outside of my area of responsibility."
       ],
       [
-        "Deploying web portals",
-        "Have deployed numerous portals according to client specification, much of the set up is done using an Admin UI and SQL statements."
+        "Web portals implementation",
+        "Implement and deploy portals on coorporate Web2Print platform for clients."
       ],
       [
         "Utilising third party APIs",
-        "use third party APIs that are integrated into the proprietary software. This often involves writing JS code that acts as 'glue' layer between the third party API and the proprietary software."
+        "Using third party APIs that are integrated into the proprietary software. This often involves writing JS code that acts as 'glue' layer between the API and the internal software."
       ],
       [
         "Platform development",
-        "Have assisted in platform development on a conceptual level as well as providing initial code that has been integrated onto the platform."
+        "Occaisional platform development on a conceptual level as well as providing initial code."
       ],
       [
         "Automation",
-        "Assisting members of the automation team with language agnostic solutions for logic and algorithmic problems, usually involving data processing and reconfiguration."
+        "Assisting members of the automation team with language agnostic solutions for logic and algorithmic problems."
       ],
       [
-        "Creating user-customisable products",
-        "This is achieved with the browser-based document editing software CHILI Publish."
+        "Creating customisable products",
+        "Using CHILI Publish, a browser-based document editing tool, to create 'Smart Artwork' products."
       ]
     ]
   },
@@ -65,6 +72,12 @@ export const workExperience = [
     blurb:
       "During my time at Vinaya I worked in the data analysis team to create internal MVC data visualisation tools for investors, customers and internal purposes. I also assisted with the design of new data infrastructure and data analysis models.",
 
+    achievments: [
+      "The proprietary Web2Print platform is antiquated and does not easily support adding bespoke functionality to customer UIs that is promised at the sales stage. Came up with the solution of injecting JavaScript into bespoke html components that the platform allows to be added onto the portal UI. This has opened up what can be promised and charged to clients, improved client rentention and as a result improved revenue streams to the organisation as a whole.",
+      "Client data was cleaned manually on our team, decided to start writing VBA and Python scripts to automate data cleaning. This has improved project implementation times on our team.",
+      "Web portals implementated on our team all shared a legacy base CSS stylesheet for numerous pages. The CSS contained many redundant rules and was very unpredictable, making brand styling extremely laborious. Improved the teams styling workflow by learning basic SCSS, rewriting the stylesheet into SCSS files and subsequently getting team members familiar with the technology.",
+      "Because the organisation is a collection of acquired sites, getting IT systems to talk to oneanother is a technical challenge. Have helped design, test & troubleshoot integration middleware software. This has improved business operation organisation wide and enabled profitable revenue streams for all parties involved."
+    ],
     duties: [
       [
         "Front End",

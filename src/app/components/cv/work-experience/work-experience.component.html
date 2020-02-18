@@ -1,1 +1,5 @@
-<p>work-experience works!</p>
+<p>work-experience component</p>
+
+<div *ngFor="let expItem of workExperience; let i = index" class="row">
+  <app-work-exp-item [workExpItem]="expItem"></app-work-exp-item>
+</div>

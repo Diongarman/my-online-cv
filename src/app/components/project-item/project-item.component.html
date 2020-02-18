@@ -1,0 +1,22 @@
+<div class="card flex-row flex-wrap">
+  <div class="row no-gutters">
+    <div
+      class="col-auto"
+      data-aos=""
+      [attr.data-aos]="projectItem.id % 2 == 0 ? 'fade-left' : 'fade-right'"
+    >
+      <img src="//placehold.it/200" class="img-fluid" alt="" />
+    </div>
+    <div class="col">
+      <div class="card-block px-2">
+        <h4 class="card-title">{{ projectItem.title }}</h4>
+        <p class="card-text">{{ projectItem.about }}</p>
+        <a href="{{ projectItem.gitURL }}" class="btn btn-dark" target="_blank">
+          <fa-icon [icon]="faGithub"></fa-icon>
+          GitHub</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="w-100 "></div>
+</div>

@@ -1,5 +1,110 @@
 <p>work-experience component</p>
 
-<div *ngFor="let expItem of workExperience; let i = index" class="row">
-  <app-work-exp-item [workExpItem]="expItem"></app-work-exp-item>
+<div class="row">
+  <div class="col">
+    <h1 class="text-center">Work History</h1>
+  </div>
+</div>
+<div class="timeline">
+  <div *ngFor="let expItem of workExperience; let i = index" class="row">
+    <!--<app-work-exp-item [workExpItem]="expItem"></app-work-exp-item>-->
+
+    <div
+      *ngIf="i % 2 == 0"
+      class="container-timeline left"
+      data-aos="zoom-in-right"
+    >
+      <div class="content">
+        <h2>2017</h2>
+        <p>
+          <app-work-exp-item [workExpItem]="expItem"></app-work-exp-item>
+        </p>
+      </div>
+    </div>
+
+    <div
+      *ngIf="i % 2 !== 0"
+      class="container-timeline right"
+      data-aos="zoom-in-right"
+    >
+      <div class="content">
+        <h2>2017</h2>
+        <p>
+          <app-work-exp-item [workExpItem]="expItem"></app-work-exp-item>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-timeline left" data-aos="zoom-in-right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam. Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+        admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
+        iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+        primis ea eam. Lorem ipsum dolor sit amet, quo ei simul congue exerci,
+        ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+        quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+        primis ea eam.
+      </p>
+    </div>
+  </div>
+  <div class="container-timeline right" data-aos="zoom-in-left">
+    <div class="content">
+      <h2>2016</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam.
+      </p>
+    </div>
+  </div>
+  <div class="container-timeline left" data-aos="zoom-in-right">
+    <div class="content">
+      <h2>2015</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam.
+      </p>
+    </div>
+  </div>
+  <div class="container-timeline right" data-aos="zoom-in-left">
+    <div class="content">
+      <h2>2012</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam.
+      </p>
+    </div>
+  </div>
+  <div class="container-timeline left" data-aos="zoom-in-right">
+    <div class="content">
+      <h2>2011</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam.
+      </p>
+    </div>
+  </div>
+  <div class="container-timeline right" data-aos="zoom-in-left">
+    <div class="content">
+      <h2>2007</h2>
+      <p>
+        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
+        perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
+        expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+        eam.
+      </p>
+    </div>
+  </div>
 </div>

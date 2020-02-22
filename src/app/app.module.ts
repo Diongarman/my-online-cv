@@ -9,8 +9,8 @@ import { ProjectItemComponent } from "./components/project-item/project-item.com
 
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { CvComponent } from "./components/cv/cv.component";
-import { WorkExperienceComponent } from './components/cv/work-experience/work-experience.component';
-import { WorkExpItemComponent } from './components/cv/work-exp-item/work-exp-item.component';
+import { WorkExperienceComponent } from "./components/cv/work-experience/work-experience.component";
+import { WorkExpItemComponent } from "./components/cv/work-exp-item/work-exp-item.component";
 
 @NgModule({
   declarations: [

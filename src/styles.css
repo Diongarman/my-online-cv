@@ -3,3 +3,23 @@
 body {
   background: #f8fff8;
 }
+
+.btn-brown {
+  color: black;
+  background-color: #eecfb7;
+  border-color: #eecfb7;
+}
+/*
+Bootstrap bug fix
+Read warning at top: https://getbootstrap.com/docs/4.0/components/modal/
+Soloution take from comments of this blog: https://weblog.west-wind.com/posts/2016/sep/14/bootstrap-modal-dialog-showing-under-modal-background
+*/
+
+.modal-backdrop {
+  /* bug fix - no overlay */
+  display: none;
+}
+
+.modal-dialog {
+  box-shadow: 0px 0px 00px 1500px #00000085;
+}

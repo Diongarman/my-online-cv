@@ -11,7 +11,11 @@
       <div class="card-block px-2">
         <h4 class="card-title">{{ projectItem.title }}</h4>
         <p class="card-text">{{ projectItem.about }}</p>
-        <a href="{{ projectItem.gitURL }}" class="btn btn-dark" target="_blank">
+        <a
+          href="{{ projectItem.gitURL }}"
+          class="btn btn-brown"
+          target="_blank"
+        >
           <fa-icon [icon]="faGithub"></fa-icon>
           GitHub</a
         >

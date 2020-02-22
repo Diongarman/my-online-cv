@@ -1,5 +1,9 @@
-<p>{{ workExpItem.company }}</p>
-<p>{{ workExpItem.id }}</p>
+<p>
+  {{ workExpItem.startDate.getDate() }}/{{
+    workExpItem.startDate.getMonth()
+  }}/{{ workExpItem.startDate.getFullYear() }}
+</p>
+
 <p>{{ workExpItem.blurb }}</p>
 
 <!-- Button trigger modal -->
@@ -24,7 +28,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Achievments</h5>
         <button
           type="button"
           class="close"

@@ -2,7 +2,7 @@ export const workExperience = [
   {
     id: 1,
     company: "Paragon Customer Communications",
-    title: "Solutions & Web Developer",
+    title: "Platform Solutions & Web Developer",
     startDate: new Date(2018, 9),
     endDate: new Date(),
     location: "Peterborough, United Kingdom",

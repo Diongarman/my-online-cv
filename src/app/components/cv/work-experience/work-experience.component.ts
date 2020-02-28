@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
-//import { workExperience } from "../../../data/work-exp-data";
-
 import { CvService } from "src/app/services/cv.service";
+
+import { educationHistory } from "src/app/data/education-data";
 
 @Component({
   selector: "app-work-experience",
@@ -11,6 +11,7 @@ import { CvService } from "src/app/services/cv.service";
 })
 export class WorkExperienceComponent implements OnInit {
   workExperience;
+  eduHistory = educationHistory;
   constructor(private cvService: CvService) {}
 
   ngOnInit(): void {

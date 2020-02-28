@@ -1,0 +1,50 @@
+<br />
+<h1 class="text-center">Education</h1>
+<br />
+<div
+  class="educationItem"
+  [attr.data-aos]="'fade-left'"
+  *ngFor="let item of eduHistory; let i = index"
+>
+  <div class="card">
+    <h5 class="card-header">
+      {{ item.institution }}
+      <small class="text-muted">
+        {{ item.startDate }} - {{ item.endDate }}</small
+      >
+    </h5>
+    <div class="card-body">
+      <p class="card-text">
+        {{ item.qualification }};
+        <span
+          *ngFor="let subject of item.fields; let i = index"
+          class="card-text"
+        >
+          {{ subject.subject
+          }}<span *ngIf="subject.grade">, {{ subject.grade }}</span>
+        </span>
+      </p>
+      <div *ngIf="item.summary">
+        <p>
+          <button
+            class="btn btn-brown"
+            type="button"
+            data-toggle="collapse"
+            [attr.data-target]="'#readMore-' + item.id"
+            aria-expanded="false"
+            [attr.aria-controls]="'readMore-' + item.id"
+          >
+            <fa-icon [icon]="faInfoCircle"></fa-icon>
+            Read more
+          </button>
+        </p>
+        <div class="collapse" [attr.id]="'readMore-' + item.id">
+          <div class="card card-body">
+            {{ item.summary }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />

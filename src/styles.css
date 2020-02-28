@@ -9,6 +9,10 @@ body {
   background-color: #eecfb7;
   border-color: #eecfb7;
 }
+
+.btn-space {
+  margin-right: 0.5rem;
+}
 /*
 Bootstrap bug fix
 Read warning at top: https://getbootstrap.com/docs/4.0/components/modal/

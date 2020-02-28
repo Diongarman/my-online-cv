@@ -11,6 +11,8 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { CvComponent } from "./components/cv/cv.component";
 import { WorkExperienceComponent } from "./components/cv/work-experience/work-experience.component";
 import { WorkExpItemComponent } from "./components/cv/work-exp-item/work-exp-item.component";
+import { EducationComponent } from './components/education/education.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { WorkExpItemComponent } from "./components/cv/work-exp-item/work-exp-ite
     ProjectItemComponent,
     CvComponent,
     WorkExperienceComponent,
-    WorkExpItemComponent
+    WorkExpItemComponent,
+    EducationComponent,
+    ProjectDetailsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

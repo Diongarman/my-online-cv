@@ -1,0 +1,12 @@
+<h1>{{ project.title }}</h1>
+<p>{{ project.about }}</p>
+
+<div class="container">
+  <h3>Stack</h3>
+  <br />
+  <div class="row">
+    <div class="col" *ngFor="let tech of project.stack">
+      <img src="./../../../assets/{{ tech }}.svg" height="50px" width="50px" />
+    </div>
+  </div>
+</div>

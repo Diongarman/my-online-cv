@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 import { Project } from "../../models/Project";
 
@@ -12,6 +13,7 @@ import { Project } from "../../models/Project";
 export class ProjectItemComponent implements OnInit {
   @Input() projectItem: Project;
   faGithub = faGithub;
+  faInfoCircle = faInfoCircle;
 
   constructor() {}
 

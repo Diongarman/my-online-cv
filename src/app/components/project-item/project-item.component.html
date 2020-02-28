@@ -13,12 +13,21 @@
         <p class="card-text">{{ projectItem.about }}</p>
         <a
           href="{{ projectItem.gitURL }}"
-          class="btn btn-brown"
+          class="btn btn-brown btn-space"
           target="_blank"
         >
           <fa-icon [icon]="faGithub"></fa-icon>
           GitHub</a
         >
+
+        <button
+          type="button"
+          class="btn btn-brown btn-space"
+          [routerLink]="['/project', projectItem.id]"
+        >
+          <fa-icon [icon]="faInfoCircle"></fa-icon>
+          Read more
+        </button>
       </div>
     </div>
   </div>

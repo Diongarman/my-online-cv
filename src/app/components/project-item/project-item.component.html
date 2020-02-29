@@ -31,6 +31,15 @@
           <fa-icon [icon]="faInfoCircle"></fa-icon>
           Read more
         </button>
+
+        <button
+          *ngIf="projectItem.live"
+          type="button"
+          class="btn btn-brown btn-space"
+        >
+          <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+          Live Link
+        </button>
       </div>
     </div>
   </div>

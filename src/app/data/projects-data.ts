@@ -7,7 +7,9 @@ export const projects = [
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit tincidunt facilisis. Fusce efficitur varius mattis. Cras nec sodales ex, at varius nulla. Ut sit amet mauris commodo mi commodo convallis.",
     stack: ["JS", "ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/todo-browser-app"
+    gitURL: "https://github.com/Diongarman/todo-browser-app",
+    live: true,
+    api: false
   },
   {
     id: 2,
@@ -17,7 +19,9 @@ export const projects = [
     about:
       " Donec sed ligula ante. Integer tempus arcu sit amet felis tempus commodo. Phasellus vel sem tempus, volutpat urna non, laoreet orci.",
     stack: ["NodeJS", "ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/node-chat-app"
+    gitURL: "https://github.com/Diongarman/node-chat-app",
+    live: true,
+    api: false
   },
 
   {
@@ -28,7 +32,9 @@ export const projects = [
     about:
       "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
     stack: ["ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/Hangman"
+    gitURL: "https://github.com/Diongarman/Hangman",
+    live: true,
+    api: false
   },
   {
     id: 4,
@@ -38,7 +44,9 @@ export const projects = [
     about:
       "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
     stack: ["ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/Hangman"
+    gitURL: "https://github.com/Diongarman/Hangman",
+    live: false,
+    api: false
   },
 
   {
@@ -49,6 +57,8 @@ export const projects = [
     about:
       "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
     stack: ["ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/Hangman"
+    gitURL: "https://github.com/Diongarman/Hangman",
+    live: false,
+    api: false
   }
 ];

@@ -5,4 +5,6 @@ export class Project {
   about: string;
   stack: string[];
   gitURL: string;
+  live: boolean;
+  api: boolean;
 }

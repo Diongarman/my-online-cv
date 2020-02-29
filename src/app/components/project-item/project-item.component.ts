@@ -3,6 +3,8 @@ import { Input } from "@angular/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+
 import { Project } from "../../models/Project";
 
 @Component({
@@ -14,6 +16,7 @@ export class ProjectItemComponent implements OnInit {
   @Input() projectItem: Project;
   faGithub = faGithub;
   faInfoCircle = faInfoCircle;
+  faExternalLinkAlt = faExternalLinkAlt;
 
   constructor() {}
 

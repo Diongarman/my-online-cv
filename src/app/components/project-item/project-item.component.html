@@ -22,11 +22,14 @@
 
         <!--Make an ngIf that renders a button with a
           link to a /api-project component if projectItem.isAPI === true-->
-
         <button
           type="button"
           class="btn btn-brown btn-space"
-          [routerLink]="['/project', projectItem.id]"
+          [routerLink]="
+            projectItem.api
+              ? ['/api-project', projectItem.id]
+              : ['/project', projectItem.id]
+          "
         >
           <fa-icon [icon]="faInfoCircle"></fa-icon>
           Read more

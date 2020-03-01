@@ -22,6 +22,7 @@
     data-aos=""
     [attr.data-aos]="i % 2 == 0 ? 'fade-right' : 'fade-left'"
   >
-    <app-project-item [projectItem]="project"> </app-project-item>
+    <app-project-item id="project.title" [projectItem]="project">
+    </app-project-item>
   </div>
 </div>

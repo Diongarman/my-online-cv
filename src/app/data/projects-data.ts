@@ -51,7 +51,7 @@ export const projects = [
 
   {
     id: 5,
-    title: "Hangman",
+    title: "Todo API",
     aboutLong:
       "Suspendisse potenti. Morbi ut ornare ex. Nulla aliquam non sapien a vehicula. Nullam mattis dapibus elit in tempor. Nullam dui nibh, tincidunt eget viverra sed, rutrum eu ipsum. Integer metus velit, tincidunt sed ante eget, cursus placerat sapien. Aliquam luctus augue vel luctus sagittis.",
     about:
@@ -59,6 +59,6 @@ export const projects = [
     stack: ["ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/Hangman",
     live: false,
-    api: false
+    api: true
   }
 ];

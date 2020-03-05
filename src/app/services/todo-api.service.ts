@@ -8,11 +8,11 @@ import { Subject } from "rxjs";
 })
 export class TodoApiService {
   todosChanged = new Subject<any>();
-  todos = [];
+  private todos: any;
   constructor(private http: HttpClient) {}
 
   getTodos() {
-    return this.http
+    this.http
       .get<any>("https://secret-taiga-87491.herokuapp.com/todos", {
         headers: {
           "Content-Type": "application/json; charset=utf-8",
@@ -22,32 +22,18 @@ export class TodoApiService {
       })
       .pipe(
         map(resData => {
-          return resData.todos;
+          //console.log(resData);
+          return resData.todos.map((todo, index) => {
+            return {
+              text: todo.text
+            };
+          });
         })
       )
       .subscribe(transformedData => {
-        return [...transformedData];
+        this.todos = [...transformedData];
+        this.todosChanged.next(this.todos);
       });
+    return this.todos;
   }
 }
-
-/*
-fetchCharacters() {
-  this.http.get<any>('https://swapi.co/api/people/?format=json')
-    .pipe(map(resData => {
-      return resData.results.map((character, index) => {
-        return {
-          id: index,
-          name: character.name,
-          gender: character.gender
-        };
-      });
-    }))
-    .subscribe(transformedData => {
-    this.characters = [...transformedData];
-    this.charactersChanged.next(this.characters);
-  });
-
-  return this.characters;
-}
-*/

@@ -16,7 +16,9 @@ export class ApiProjectDetailsComponent implements OnInit, OnDestroy {
     this.todos = this.todoApiService.getTodos();
     this.todosSubs = this.todoApiService.todosChanged.subscribe(todos => {
       this.todos = todos;
+      console.log(this.todos);
     });
+    console.log(this.todos);
   }
 
   ngOnDestroy() {

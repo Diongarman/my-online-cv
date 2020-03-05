@@ -16,6 +16,5 @@ export class ApiProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.todos = this.todoApiService.getTodos();
-    console.log(this.todos);
   }
 }

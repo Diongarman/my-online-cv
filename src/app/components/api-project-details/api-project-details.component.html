@@ -1,5 +1,29 @@
-<p>api-project-details works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a (click)="back()" href="#" class="previous round">&#8249;</a>
 
-<div *ngFor="let todo of todos">
+      <h1 class="text-center">{{ project.title }}</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ project.aboutLong }}</p>
+    </div>
+  </div>
+
+  <h3>Stack</h3>
+  <br />
+  <div class="row">
+    <div class="col" *ngFor="let tech of project.stack">
+      <img src="./../../../assets/{{ tech }}.svg" height="50px" width="50px" />
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-brown btn-space" (click)="toggleDisplay()">
+  GET Todos
+</button>
+<div [hidden]="!isShow" *ngFor="let todo of todos">
   <p>{{ todo.text }}</p>
 </div>

@@ -1,26 +1,47 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
-import { Subscription } from "rxjs";
+import { Component, OnInit } from "@angular/core";
 import { TodoApiService } from "../../services/todo-api.service";
+
+import { ActivatedRoute } from "@angular/router";
+
+import { Project } from "../../models/Project";
+import { projects } from "../../data/projects-data";
+
+import { Location } from "@angular/common";
 
 @Component({
   selector: "app-api-project-details",
   templateUrl: "./api-project-details.component.html",
   styleUrls: ["./api-project-details.component.css"]
 })
-export class ApiProjectDetailsComponent implements OnInit, OnDestroy {
+export class ApiProjectDetailsComponent implements OnInit {
+  project: Project;
   todos;
-  todosSubs: Subscription;
-  constructor(private todoApiService: TodoApiService) {}
+  isShow = false;
+  constructor(
+    private todoApiService: TodoApiService,
+    private route: ActivatedRoute,
+    private _location: Location
+  ) {}
 
-  ngOnInit() {
-    this.todoApiService.getTodos().subscribe(transformedData => {
-      this.todos = [...transformedData];
-
-      console.log(this.todos);
-    });
+  back() {
+    this._location.back();
   }
 
-  ngOnDestroy() {
-    this.todosSubs.unsubscribe();
+  toggleDisplay() {
+    this.isShow = !this.isShow;
+
+    if (this.isShow) {
+      this.todoApiService.getTodos().subscribe(transformedData => {
+        this.todos = [...transformedData];
+      });
+    }
+  }
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.project = projects.find(
+        project => project.id === +params.get("projectId")
+      );
+    });
   }
 }

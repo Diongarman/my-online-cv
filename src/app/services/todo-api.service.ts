@@ -8,7 +8,7 @@ import { Subject } from "rxjs";
 })
 export class TodoApiService {
   todosChanged = new Subject<any>();
-  todos = [];
+  private todos;
   constructor(private http: HttpClient) {}
 
   getTodos() {
@@ -22,32 +22,12 @@ export class TodoApiService {
       })
       .pipe(
         map(resData => {
-          return resData.todos;
+          return resData.todos.map((todo, index) => {
+            return {
+              text: todo.text
+            };
+          });
         })
-      )
-      .subscribe(transformedData => {
-        return [...transformedData];
-      });
+      );
   }
 }
-
-/*
-fetchCharacters() {
-  this.http.get<any>('https://swapi.co/api/people/?format=json')
-    .pipe(map(resData => {
-      return resData.results.map((character, index) => {
-        return {
-          id: index,
-          name: character.name,
-          gender: character.gender
-        };
-      });
-    }))
-    .subscribe(transformedData => {
-    this.characters = [...transformedData];
-    this.charactersChanged.next(this.characters);
-  });
-
-  return this.characters;
-}
-*/

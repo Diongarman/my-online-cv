@@ -20,10 +20,19 @@
       <img src="./../../../assets/{{ tech }}.svg" height="50px" width="50px" />
     </div>
   </div>
-</div>
-<button type="button" class="btn btn-brown btn-space" (click)="toggleDisplay()">
-  GET Todos
-</button>
-<div [hidden]="!isShow" *ngFor="let todo of todos">
-  <p>{{ todo.text }}</p>
+  <br />
+  <button
+    type="button"
+    class="btn btn-success btn-space"
+    (click)="toggleDisplay()"
+  >
+    GET Todos
+  </button>
+  <br />
+  <div [hidden]="!isShow">
+    <h3>Todos</h3>
+    <div class="row" *ngFor="let todo of todos">
+      <li>{{ todo.text }}</li>
+    </div>
+  </div>
 </div>

@@ -13,12 +13,11 @@ export class ApiProjectDetailsComponent implements OnInit, OnDestroy {
   constructor(private todoApiService: TodoApiService) {}
 
   ngOnInit() {
-    this.todos = this.todoApiService.getTodos();
-    this.todosSubs = this.todoApiService.todosChanged.subscribe(todos => {
-      this.todos = todos;
+    this.todoApiService.getTodos().subscribe(transformedData => {
+      this.todos = [...transformedData];
+
       console.log(this.todos);
     });
-    console.log(this.todos);
   }
 
   ngOnDestroy() {

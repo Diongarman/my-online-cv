@@ -1,5 +1,4 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-pink">
-  <a class="navbar-brand" href="#">Navbar</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -15,20 +14,25 @@
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#"
-          ><fa-icon [icon]="faUser"></fa-icon>Home
+          ><fa-icon class="btn-space" [icon]="faHome"></fa-icon>Home
           <span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#portfolio">
-          <fa-icon [icon]="faPaintBrush"></fa-icon>Portfolio</a
+          <fa-icon class="btn-space" [icon]="faPaintBrush"></fa-icon
+          >Portfolio</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/cv']">CV</a>
+        <a class="nav-link" [routerLink]="['/cv']"
+          ><fa-icon class="btn-space" [icon]="faFile"></fa-icon>CV</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#"
+          ><fa-icon class="btn-space" [icon]="faUser"></fa-icon>Contact</a
+        >
       </li>
       <li class="nav-item dropdown">
         <a
@@ -39,12 +43,12 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Dropdown link
+          Blogs
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Development</a>
+          <a class="dropdown-item" href="#">Travel</a>
+          <a class="dropdown-item" href="#">Mathematics</a>
         </div>
       </li>
     </ul>

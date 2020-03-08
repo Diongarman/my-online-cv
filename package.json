@@ -25,6 +25,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@service-work/is-loading": "^3.0.3",
     "@types/jquery": "^3.3.32",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",

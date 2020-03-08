@@ -28,6 +28,7 @@
   >
     GET Todos
   </button>
+  <div *ngIf="loading" class="spinner-border text-muted"></div>
   <br />
   <div [hidden]="!isShow">
     <h3>Todos</h3>

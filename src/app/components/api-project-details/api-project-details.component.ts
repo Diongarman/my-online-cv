@@ -17,6 +17,7 @@ export class ApiProjectDetailsComponent implements OnInit {
   project: Project;
   todos;
   isShow = false;
+  loading = false;
   constructor(
     private todoApiService: TodoApiService,
     private route: ActivatedRoute,
@@ -29,10 +30,12 @@ export class ApiProjectDetailsComponent implements OnInit {
 
   toggleDisplay() {
     this.isShow = !this.isShow;
+    this.loading = this.isShow;
 
     if (this.isShow) {
       this.todoApiService.getTodos().subscribe(transformedData => {
         this.todos = [...transformedData];
+        this.loading = false;
       });
     }
   }

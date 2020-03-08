@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faBlog } from "@fortawesome/free-solid-svg-icons";
 
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 
@@ -15,6 +16,7 @@ export class NavbarComponent implements OnInit {
   faPaintBrush = faPaintBrush;
   faFile = faFile;
   faHome = faHome;
+  faBlog = faBlog;
 
   constructor() {}
 

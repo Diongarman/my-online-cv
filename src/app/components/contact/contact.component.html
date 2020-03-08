@@ -1,17 +1,36 @@
 <div class="container">
+  <div class="centered">
+    <p class="display-3">Contact Me</p>
+  </div>
+
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
     <div class="form-group">
       <label for="exampleFormControlInput1">Email Address</label>
       <input
         formControlName="emailAddress"
         class="form-control"
-        [ngClass]="{ 'is-invalid': fval.emailAddress.errors }"
+        [ngClass]="{
+          'is-invalid': fval.emailAddress.errors && fval.emailAddress?.touched
+        }"
         id="exampleFormControlInput1"
         placeholder="name@example.com"
       />
-      <div *ngIf="fval.emailAddress?.errors" class="invalid-feedback"></div>
-      <div *ngIf="fval.emailAddress?.errors?.required">Email is required</div>
-      <div *ngIf="fval.emailAddress?.errors?.email">
+      <div
+        *ngIf="fval.emailAddress?.errors && fval.emailAddress?.touched"
+        class="invalid-feedback"
+      ></div>
+      <div
+        class="text-danger"
+        *ngIf="
+          fval.emailAddress?.errors?.required && fval.emailAddress?.touched
+        "
+      >
+        Email is required
+      </div>
+      <div
+        class="text-danger"
+        *ngIf="fval.emailAddress?.errors?.email && fval.emailAddress?.touched"
+      >
         Enter a valid email address
       </div>
     </div>
@@ -21,14 +40,36 @@
       <textarea
         formControlName="body"
         class="form-control"
-        [ngClass]="{ 'is-invalid': fval.body.errors }"
+        [ngClass]="{ 'is-invalid': fval.body.errors && fval.body?.touched }"
         id="exampleFormControlTextarea1"
         rows="8"
       ></textarea>
-      <div *ngIf="fval.body?.errors" class="invalid-feedback"></div>
-      <div *ngIf="fval.body?.errors?.required">Email body is required</div>
+      <div
+        *ngIf="fval.body?.errors && fval.body?.touched"
+        class="invalid-feedback"
+      ></div>
+      <div
+        class="text-danger"
+        *ngIf="fval.body?.errors?.required && fval.body?.touched"
+      >
+        Email body is required
+      </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button
+      [disabled]="contactForm.invalid"
+      type="submit"
+      class="btn btn-primary my-2"
+    >
+      Submit
+    </button>
+
+    <div
+      class="row alert alert-danger"
+      role="alert"
+      *ngIf="submitted && contactForm.invalid"
+    >
+      This is a danger alert—check it out!
+    </div>
   </form>
 </div>

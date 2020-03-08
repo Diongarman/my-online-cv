@@ -13,6 +13,7 @@ import {
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
+  submitted = false;
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
@@ -32,13 +33,13 @@ export class ContactComponent implements OnInit {
 
   onSubmit(customerData) {
     // Process checkout data here
-
+    this.submitted = true;
     if (this.contactForm.invalid) {
-      alert("Form is invalid");
       return;
     }
 
     this.contactForm.reset();
+    this.submitted = false;
     console.warn("Your order has been submitted", customerData);
   }
 

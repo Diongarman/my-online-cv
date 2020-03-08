@@ -6,12 +6,14 @@ import { CvComponent } from "./components/cv/cv.component";
 
 import { ProjectDetailsComponent } from "./components/project-details/project-details.component";
 import { ApiProjectDetailsComponent } from "./components/api-project-details/api-project-details.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 const routes: Routes = [
   { path: "", component: ProjectsComponent },
   { path: "cv", component: CvComponent },
   { path: "project/:projectId", component: ProjectDetailsComponent },
-  { path: "api-project/:projectId", component: ApiProjectDetailsComponent }
+  { path: "api-project/:projectId", component: ApiProjectDetailsComponent },
+  { path: "contact", component: ContactComponent }
 ];
 
 @NgModule({

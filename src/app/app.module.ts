@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -15,6 +16,7 @@ import { WorkExpItemComponent } from "./components/cv/work-exp-item/work-exp-ite
 import { EducationComponent } from "./components/education/education.component";
 import { ProjectDetailsComponent } from "./components/project-details/project-details.component";
 import { ApiProjectDetailsComponent } from "./components/api-project-details/api-project-details.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 @NgModule({
   declarations: [
@@ -27,13 +29,16 @@ import { ApiProjectDetailsComponent } from "./components/api-project-details/api
     WorkExpItemComponent,
     EducationComponent,
     ProjectDetailsComponent,
-    ApiProjectDetailsComponent
+    ApiProjectDetailsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

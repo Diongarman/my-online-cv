@@ -1,17 +1,34 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
-  <div>
-    <label for="email">
-      email
-    </label>
-    <input id="email" type="text" formControlName="emailAddress" />
-  </div>
+<div class="container">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email Address</label>
+      <input
+        formControlName="emailAddress"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': fval.emailAddress.errors }"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+      <div *ngIf="fval.emailAddress?.errors" class="invalid-feedback"></div>
+      <div *ngIf="fval.emailAddress?.errors?.required">Email is required</div>
+      <div *ngIf="fval.emailAddress?.errors?.email">
+        Enter a valid email address
+      </div>
+    </div>
 
-  <div>
-    <label for="emailBody">
-      Address
-    </label>
-    <input id="emailBody" type="text" formControlName="body" />
-  </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Body</label>
+      <textarea
+        formControlName="body"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': fval.body.errors }"
+        id="exampleFormControlTextarea1"
+        rows="8"
+      ></textarea>
+      <div *ngIf="fval.body?.errors" class="invalid-feedback"></div>
+      <div *ngIf="fval.body?.errors?.required">Email body is required</div>
+    </div>
 
-  <button class="button" type="submit">Send</button>
-</form>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

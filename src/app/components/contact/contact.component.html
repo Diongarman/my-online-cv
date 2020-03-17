@@ -15,6 +15,7 @@
         id="exampleFormControlInput1"
         placeholder="name@example.com"
       />
+
       <div
         *ngIf="fval.emailAddress?.errors && fval.emailAddress?.touched"
         class="invalid-feedback"
@@ -32,6 +33,24 @@
         *ngIf="fval.emailAddress?.errors?.email && fval.emailAddress?.touched"
       >
         Enter a valid email address
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlSubject">Subject</label>
+      <input
+        formControlName="subject"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid': fval.subject.errors && fval.subject?.touched
+        }"
+        id="exampleFormControlSubject"
+      />
+      <div
+        class="text-danger"
+        *ngIf="fval.subject?.errors?.required && fval.subject?.touched"
+      >
+        Subject is required
       </div>
     </div>
 

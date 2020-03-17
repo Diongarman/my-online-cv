@@ -40,8 +40,9 @@
           type="button"
           class="btn btn-brown btn-space"
         >
-          <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
-          Live Link
+          <a href="{{ projectItem.liveURL }}" target="_blank"
+            ><fa-icon [icon]="faExternalLinkAlt"></fa-icon> Live Link</a
+          >
         </button>
       </div>
     </div>

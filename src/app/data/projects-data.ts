@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: "Todo",
+    title: "Note Taker",
     aboutLong:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus ex, rhoncus vitae pulvinar id, tempor ut odio. Quisque sit amet luctus neque. Nunc venenatis sit amet est non venenatis. Aliquam lacinia non sem a posuere. Fusce ullamcorper in nulla quis posuere. Mauris non rhoncus nunc. Nulla facilisi. Duis at diam vel tortor eleifend finibus eu tincidunt odio. Mauris dignissim vel mauris quis vulputate. Nunc a dui at felis tempor ultricies.",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit tincidunt facilisis. Fusce efficitur varius mattis. Cras nec sodales ex, at varius nulla. Ut sit amet mauris commodo mi commodo convallis.",
+      "Learned a great deal completing this project, particularly the utility of the Window object's localstorage API. As well as exploring browser APIs this project was an attempt at more mindfull application design, it aimed to separate out the concerns of functions as much as possible in order to make the code more extendible and readable  - a practice I will adopt and improve in future projects ",
+    about: "A note taking browser app with local data persistence.",
     stack: ["JS", "ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/todo-browser-app",
+    gitURL: "https://github.com/Diongarman/notes-app",
+    liveURL: "https://sicknotes.netlify.com/index.html",
     live: true,
     api: false
   },
@@ -15,11 +15,12 @@ export const projects = [
     id: 2,
     title: "Chat App",
     aboutLong:
-      "Etiam dapibus finibus mi vel mattis. Nunc auctor commodo nisi sit amet convallis. Cras vestibulum dui mi, vel iaculis felis luctus ac. Vivamus nulla libero, convallis sit amet tincidunt ac, suscipit quis nulla. In commodo, lacus vel accumsan commodo, risus lorem pretium eros, sed ultrices libero ex in lorem. Nunc eget mauris consectetur, eleifend felis nec, suscipit justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce mollis leo in ante aliquet, sed tempus justo consequat. Sed nisl lorem, ullamcorper in gravida sit amet, vestibulum vitae leo. Donec mollis vel felis in consequat. Cras laoreet quam ut nisi euismod, at tempor ex gravida. Nulla eget pretium nunc, posuere aliquam mi. Maecenas ultricies nisl eget lacinia luctus.",
+      "This project was part of Andrew Mead and Rob Percival's 'The Complete Node.js Developer Course' on Udemy. The application involved heavily utilising NodeJS's websocket library socket.io and understanding how to write code in event-driven patterns. The learning curve was steep but really demonstrated to me why NodeJS is described as an 'non-blocking, event driven and asynchronous' environment. In addition to the course, I extended the project to include a 'show location' feature that drops a user's location pulled from the browser into a chat - with the help of the Google Maps API. Moving forward, I plan to utilise the knowledge gained on websockets to implement IOT automation projects using socket.io or some similar technology.",
     about:
-      " Donec sed ligula ante. Integer tempus arcu sit amet felis tempus commodo. Phasellus vel sem tempus, volutpat urna non, laoreet orci.",
+      "An NodeJS/Express Chat app with multi-user and chat room functionalities implemented using websockets.",
     stack: ["NodeJS", "ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/node-chat-app",
+    liveURL: "https://chat-app-node-dion.herokuapp.com/",
     live: true,
     api: false
   },
@@ -28,37 +29,60 @@ export const projects = [
     id: 3,
     title: "Hangman",
     aboutLong:
-      "Sed ut ultrices dolor. Integer mattis justo sit amet sapien vulputate posuere. Donec vel diam pulvinar, bibendum ante sed, tincidunt libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at ipsum condimentum, tincidunt nibh non, laoreet ipsum. Etiam ac nibh lacinia, imperdiet ex quis, porta velit. Duis laoreet nulla at sem pellentesque, ut molestie mauris bibendum. Suspendisse vel porttitor felis. Cras faucibus, nisi scelerisque euismod laoreet, ligula velit tincidunt neque, sed hendrerit ante felis eu ex. Fusce sagittis ut tellus et accumsan. Donec congue, enim non sollicitudin laoreet, purus massa interdum nibh, maximus efficitur elit velit sed risus. Nullam accumsan metus ut tortor sollicitudin, ac rutrum augue gravida. Nam ac mi quis ante eleifend eleifend.",
-    about:
-      "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
+      "This project involved getting to grips with some basics of OOP to preserve the state of the user's game instance and async/await features for making requests to an external web api.",
+    about: "A hangman browser application in pure JS/ES6",
     stack: ["ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/Hangman",
+    liveURL: "https://lithangman.netlify.com/",
     live: true,
     api: false
   },
   {
     id: 4,
-    title: "Hangman",
+    title: "Todo",
     aboutLong:
-      "Etiam pretium rhoncus neque sed tempor. Duis a lorem sit amet dui lobortis volutpat eu ut nibh. Nulla vulputate magna quis eros tincidunt malesuada. Phasellus pulvinar volutpat eros, vel hendrerit elit rutrum id. Duis volutpat in augue a vehicula. Quisque nec urna a purus dignissim tincidunt. Aliquam luctus at leo eget volutpat. Donec porttitor hendrerit imperdiet. Proin accumsan sed ante in finibus. Aenean vel ante a sapien rhoncus rhoncus vehicula non lorem. Vestibulum sodales dignissim tincidunt.",
-    about:
-      "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
+      "A basic Todo browser app with a search filter. Utilised basic DOM API features and gained an appreciation of the use of WebPack to enable modular codebase.",
+    about: "A simple todo browser app written in pure JS/ES6.",
     stack: ["ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/Hangman",
-    live: false,
+    gitURL: "https://github.com/Diongarman/todo-browser-app",
+    liveURL: "http://tangy-wood.surge.sh/",
+    live: true,
     api: false
   },
 
   {
     id: 5,
-    title: "Todo API",
+    title: "Task Manager API",
     aboutLong:
-      "Suspendisse potenti. Morbi ut ornare ex. Nulla aliquam non sapien a vehicula. Nullam mattis dapibus elit in tempor. Nullam dui nibh, tincidunt eget viverra sed, rutrum eu ipsum. Integer metus velit, tincidunt sed ante eget, cursus placerat sapien. Aliquam luctus augue vel luctus sagittis.",
-    about:
-      "Nunc tincidunt dui et varius luctus. Phasellus tempor nisl sit amet sapien fermentum pretium. Nunc in elementum quam.",
-    stack: ["ES6", "HTML5", "CSS"],
-    gitURL: "https://github.com/Diongarman/Hangman",
+      "A full CRUD REST API with MongoDB used for data persistence and authentication middleware. I learned much about HTTP protocols and overcoming CORS issues - have a test of the GET endpoint below as proof! I learned much about prudently structuring applications to scale and also have a general idea of how web APIs are tools that can implement business logic. The next logical step of progression for me would be to investigate creating microservices and the relevant architectural concepts.",
+    about: "A Todo/Task Manager API implemented with NodeJS and MongoDB",
+    stack: ["NodeJS", "MongoDB", "ES6", "HTML5", "CSS"],
+    gitURL: "https://github.com/Diongarman/node-course-2-todo-api",
     live: false,
     api: true
+  },
+
+  {
+    id: 6,
+    title: "Starwars Characters App",
+    aboutLong:
+      "This application currently provides a psuedo login page, renders a list of Star Wars characters by reaching out to https://swapi.co and a character details page. The goal of this project was two-fold; I wanted to learn new skills with Ionic + Angular as well as break bad developer habits. I familiarised myself with the symbiotic, cross platform frameworks Ionic and Angular through youtube videos and documentation, which was very enriching. However, my primary goal was to tackle some of my behvioural flaws as a developer - being inclined to overreading before producing I conceived of this project with the plan of seeing how far I can get from zero Ionic and Angular knowledge to a basic working app. I really value the insight I gained about myself here, which was that I work best when I have a broad overview of a technology and making sure to only deal with the pedantry of implementation details on an ad hoc basis. In the future I plan on extending this application to have a properly functioning authentication-based login system that is powered by a NodeJS service.",
+    about:
+      "An cross platform mobile & browser app written in Ionic + Angular that retrieves Star Wars characters from an API.",
+    stack: ["Ionic", "Angular", "ES6", "HTML5", "SASS"],
+    gitURL: "https://github.com/Diongarman/ionic-angular-app",
+    live: false,
+    api: false
+  },
+  {
+    id: 7,
+    title: "Portfolio & CV/Resumé App",
+    aboutLong:
+      "This application shows a list of projects, a CV/Resumé and has a functioning contact page.",
+    about: "A portfolio & CV/Resumé app",
+    stack: ["Angular", "NodeJS", "ES6", "HTML5", "CSS"],
+    gitURL: "https://github.com/Diongarman/my-online-cv",
+    live: false,
+    api: false
   }
 ];

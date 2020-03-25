@@ -4,7 +4,7 @@ export class Project {
   aboutLong: string;
   about: string;
   stack: string[];
-  liveURL: string;
+  liveURL: string | null;
   gitURL: string;
   live: boolean;
   api: boolean;

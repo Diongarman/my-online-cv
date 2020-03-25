@@ -58,6 +58,7 @@ export const projects = [
     about: "A Todo/Task Manager API implemented with NodeJS and MongoDB",
     stack: ["NodeJS", "MongoDB", "ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/node-course-2-todo-api",
+    liveURL: null,
     live: false,
     api: true
   },
@@ -71,6 +72,7 @@ export const projects = [
       "An cross platform mobile & browser app written in Ionic + Angular that retrieves Star Wars characters from an API.",
     stack: ["Ionic", "Angular", "ES6", "HTML5", "SASS"],
     gitURL: "https://github.com/Diongarman/ionic-angular-app",
+    liveURL: null,
     live: false,
     api: false
   },
@@ -80,8 +82,9 @@ export const projects = [
     aboutLong:
       "This application shows a list of projects, a CV/Resumé and has a functioning contact page.",
     about: "A portfolio & CV/Resumé app",
-    stack: ["Angular", "NodeJS", "ES6", "HTML5", "CSS"],
+    stack: ["Angular", "NodeJS", "ES6", "Bootstrap-4", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/my-online-cv",
+    liveURL: null,
     live: false,
     api: false
   }

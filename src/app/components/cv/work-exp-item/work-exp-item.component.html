@@ -1,7 +1,10 @@
 <p>
   {{ workExpItem.startDate.getDate() }}/{{
     workExpItem.startDate.getMonth()
-  }}/{{ workExpItem.startDate.getFullYear() }}
+  }}/{{ workExpItem.startDate.getFullYear() }} -
+  {{ workExpItem.endDate.getDate() }}/{{ workExpItem.endDate.getMonth() }}/{{
+    workExpItem.endDate.getFullYear()
+  }}
 </p>
 
 <p>{{ workExpItem.blurb }}</p>
@@ -9,12 +12,12 @@
 <!-- Button trigger modal -->
 <button
   type="button"
-  class="btn btn-brown"
+  class="btn btn-brown btn-space"
   data-toggle="modal"
   [attr.data-target]="'#exampleModalLong-' + workExpItem.id"
 >
   <fa-icon [icon]="faInfoCircle"></fa-icon>
-  Read more
+  Achievements
 </button>
 
 <div
@@ -42,6 +45,55 @@
         <ul *ngFor="let i of workExpItem.achievments">
           <li>{{ i }}</li>
         </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="btn btn-brown"
+  data-toggle="modal"
+  [attr.data-target]="'#exampleModalDuties-' + workExpItem.id"
+>
+  <fa-icon [icon]="faInfoCircle"></fa-icon>
+  Duties
+</button>
+
+<div
+  class="modal fade"
+  [attr.id]="'exampleModalDuties-' + workExpItem.id"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalDutiesTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalDutiesTitle">Duties</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div *ngFor="let i of workExpItem.duties">
+          <h4>{{ i[0] }}</h4>
+          <ul>
+            <li>{{ i[1] }}</li>
+          </ul>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">

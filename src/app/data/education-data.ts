@@ -16,7 +16,7 @@ export const educationHistory = [
     institution: "Oxford Brookes",
     startDate: "2009",
     endDate: "2012",
-    qualification: "Bachelor's degree",
+    qualification: "BA",
     fields: [{ subject: "Philosophy & Music", grade: "2:1" }],
     summary:
       "I obtained a dual honours degree that consisted of subjects equally from both the univerty's Philosophy and Music syllabuses. Hard skills gained in Philosophy modules include technical writing abilities, logical inference and deduction; soft skills gained: critical thinking, essay/deadline planning, technical vocabulary and verbal & written communication. Hard skills gained in Music modules include: working with a variety of different systems of notation to represent sound and working with sound engineering equipment and IT; soft skills gained: communicating technically complex information to groups of people, a plethora of pedagogical skills applicable in any field. "

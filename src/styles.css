@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  background: #f8fff8;
+  background: black;
+  color: #808080fb;
 }
 
 .btn-brown {

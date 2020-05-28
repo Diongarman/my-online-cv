@@ -8,8 +8,9 @@ export const projects = [
     stack: ["JS", "ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/notes-app",
     liveURL: "https://sicknotes.netlify.com/index.html",
+    gifURL: "https://media.giphy.com/media/Xxq6Sw4y5H6NWrwLKt/giphy.gif",
     live: true,
-    api: false
+    api: false,
   },
   {
     id: 2,
@@ -21,8 +22,9 @@ export const projects = [
     stack: ["NodeJS", "ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/node-chat-app",
     liveURL: "https://chat-app-node-dion.herokuapp.com/",
+    gifURL: "https://media.giphy.com/media/U3xtW4w2tg9u82vkwH/giphy.gif",
     live: true,
-    api: false
+    api: false,
   },
 
   {
@@ -34,8 +36,9 @@ export const projects = [
     stack: ["ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/Hangman",
     liveURL: "https://lithangman.netlify.com/",
+    gifURL: "https://media.giphy.com/media/eiLMT3Y7ZRyXtBAWMf/giphy.gif",
     live: true,
-    api: false
+    api: false,
   },
   {
     id: 4,
@@ -46,21 +49,23 @@ export const projects = [
     stack: ["ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/todo-browser-app",
     liveURL: "http://tangy-wood.surge.sh/",
+    gifURL: "https://media.giphy.com/media/lovtQXSYSCxrGF4nL4/giphy.gif",
     live: true,
-    api: false
+    api: false,
   },
 
   {
     id: 5,
     title: "Task Manager API",
     aboutLong:
-      "A full CRUD REST API with MongoDB used for data persistence and authentication middleware. I learned much about HTTP protocols and overcoming CORS issues - have a test of the GET endpoint below as proof! I learned much about prudently structuring applications to scale and also have a general idea of how web APIs are tools that can implement business logic. The next logical step of progression for me would be to investigate creating microservices and the relevant architectural concepts.",
+      "A full CRUD REST API with MongoDB used for data persistence and authentication middleware. I learned much about HTTP protocols and overcoming CORS issues - have a test of the GET endpoint below as proof! I learned much about prudently structuring applications to scale and also have a general idea of how web APIs are tools that can implement business logic. The next logical step of progression for me would be to investigate creating microservices based architectures.",
     about: "A Todo/Task Manager API implemented with NodeJS and MongoDB",
     stack: ["NodeJS", "MongoDB", "ES6", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/node-course-2-todo-api",
     liveURL: null,
+    gifURL: "https://media.giphy.com/media/IgLy6NKLJcM3QhOYWe/giphy.gif",
     live: false,
-    api: true
+    api: true,
   },
 
   {
@@ -73,19 +78,21 @@ export const projects = [
     stack: ["Ionic", "Angular", "ES6", "HTML5", "SASS"],
     gitURL: "https://github.com/Diongarman/ionic-angular-app",
     liveURL: null,
+    gifURL: "https://via.placeholder.com/200x100",
     live: false,
-    api: false
+    api: false,
   },
   {
     id: 7,
     title: "Portfolio & CV/Resumé App",
     aboutLong:
-      "This application shows a list of projects, a CV/Resumé and has a functioning contact page.",
-    about: "A portfolio & CV/Resumé app",
+      "This is an Angular application that shows a list of projects, a CV/resumé and has a functioning contact page.",
+    about: "A portfolio & CV/resumé app",
     stack: ["Angular", "NodeJS", "ES6", "Bootstrap-4", "HTML5", "CSS"],
     gitURL: "https://github.com/Diongarman/my-online-cv",
     liveURL: null,
+    gifURL: "https://media.giphy.com/media/jTSN3w5uokVli1ykxv/giphy.gif",
     live: false,
-    api: false
-  }
+    api: false,
+  },
 ];

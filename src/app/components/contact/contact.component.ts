@@ -5,13 +5,13 @@ import {
   FormBuilder,
   FormGroup,
   FormControl,
-  Validators
+  Validators,
 } from "@angular/forms";
 
 @Component({
   selector: "app-contact",
   templateUrl: "./contact.component.html",
-  styleUrls: ["./contact.component.css"]
+  styleUrls: ["./contact.component.css"],
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
@@ -27,12 +27,12 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       emailAddress: new FormControl("", [
         Validators.required,
-        Validators.email
+        Validators.email,
       ]),
 
       body: new FormControl("", [Validators.required]),
 
-      subject: new FormControl("", [Validators.required])
+      subject: new FormControl("", [Validators.required]),
     });
   }
 
@@ -44,10 +44,10 @@ export class ContactComponent implements OnInit {
     return this.http
       .post<any>("https://node-email-webservice.herokuapp.com/email", cdata, {
         headers: new HttpHeaders({
-          "Content-Type": "application/json; charset=utf-8"
-        })
+          "Content-Type": "application/json; charset=utf-8",
+        }),
       })
-      .pipe(resData => resData);
+      .pipe((resData) => resData);
   }
 
   onSubmit(customerData) {
@@ -63,8 +63,8 @@ export class ContactComponent implements OnInit {
     //Submit post to email routing API here
     console.warn("Your order has been submitted", customerData);
 
-    this.sendEmail(customerData).subscribe(data => console.log(data));
-    this.router.navigate(["/"]);
+    this.sendEmail(customerData).subscribe((data) => console.log(data));
+    //this.router.navigate(["/"]);
   }
 
   get email() {

@@ -6,6 +6,7 @@ export class Project {
   stack: string[];
   liveURL: string | null;
   gitURL: string;
+  gifURL: string;
   live: boolean;
   api: boolean;
 }

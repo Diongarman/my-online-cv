@@ -1,7 +1,10 @@
 #section-1 {
-  background-image: url("../../../assets/boat.jpg");
-
+  /*background-image: url("../../../assets/boat.jpg");*/
   width: 100%;
+}
+
+.text {
+  color: #808080fb;
 }
 
 .text-container {
@@ -13,12 +16,12 @@
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .white-title {
-  color: whitesmoke;
+  color: white;
   text-align: center;
 }

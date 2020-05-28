@@ -18,6 +18,9 @@ import { ProjectDetailsComponent } from "./components/project-details/project-de
 import { ApiProjectDetailsComponent } from "./components/api-project-details/api-project-details.component";
 import { ContactComponent } from "./components/contact/contact.component";
 
+//animation
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,7 @@ import { ContactComponent } from "./components/contact/contact.component";
     EducationComponent,
     ProjectDetailsComponent,
     ApiProjectDetailsComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +41,10 @@ import { ContactComponent } from "./components/contact/contact.component";
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

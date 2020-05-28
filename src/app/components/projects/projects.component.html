@@ -3,20 +3,21 @@
   <div class="centered">
     <p class="display-3">About</p>
     <br />
-    <p class="lead">
+
+    <p class="lead" @myInsertRemoveTrigger>
       I am a solutions & web developer with commercial experience working in
       both corporate and startup settings that is currently seeking a Fullstack
       position. I am looking to work alongside an expert team of developers with
-      the intention to broaden as well as deepen my skillset so to eventually
-      take ownership of projects.
+      the intention to broaden as well as deepen my skillset so to take
+      ownership of projects.
     </p>
   </div>
 </div>
 <div id="portfolio" class="container">
   <br />
-  <h1 class="text-center display-2" style="margin-top: 1rem;">Projects</h1>
+  <h1 class="text text-center display-2" style="margin-top: 1rem;">Projects</h1>
   <div
-    style="margin-top:15px; margin-bottom: 15px;"
+    style="margin-top: 15px; margin-bottom: 15px;"
     *ngFor="let project of projects; let i = index"
     data-aos=""
     [attr.data-aos]="i % 2 == 0 ? 'fade-right' : 'fade-left'"

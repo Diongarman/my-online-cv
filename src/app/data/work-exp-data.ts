@@ -17,7 +17,7 @@ export const workExperience = [
     ],
     duties: [
       [
-        "Data processing, cleaning and migration",
+        "Data Processing, Cleaning and Migration",
         " Writing VBA and Python scripts to process client data.",
       ],
       [
@@ -37,19 +37,19 @@ export const workExperience = [
         "Working on web portal UIs, implementing functionality specified by client and brand consistent styling.",
       ],
       [
-        "Project management",
+        "Project Management",
         "Overseeing multiple projects concurrently and taking responsibility of any key tasks that extend outside of my area of responsibility.",
       ],
       [
-        "Web portal implementation",
+        "Web Portal Implementation",
         "Implementing and deploying portals on Web2Print platform for clients.",
       ],
       [
-        "Third party APIs",
+        "Third Party APIs",
         "Utilising third party APIs integrated into company platform. This involves writing JS code that acts as 'glue' layer between the API and the company platform.",
       ],
       [
-        "Platform development",
+        "Platform Development",
         "Occasional platform development on a conceptual level as well as providing initial code.",
       ],
       [

@@ -52,8 +52,19 @@
             ><fa-icon [icon]="faExternalLinkAlt"></fa-icon> Live Link</a
           >
         </button>
+
+        <div class="row">
+          <div class="col" *ngFor="let tech of projectItem.stack">
+            <img
+              src="./../../../assets/{{ tech }}.svg"
+              height="50px"
+              width="50px"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div class="w-100"></div>
 </div>

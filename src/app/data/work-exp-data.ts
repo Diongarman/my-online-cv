@@ -74,7 +74,7 @@ export const workExperience = [
 
     achievments: [
       "Created an automated reporting service that emailed statistics and data visualisations. This provided a snapshot overview of the company's performance and as a result helped drive company decisions and secure further investment.",
-      "I rewrote app data visualisation app as a greenfield project. This new app was measurably faster, scalable and human readable.",
+      "Rebuilt app data visualisation app as a greenfield project. This new app was measurably faster, scalable and human readable.",
       "Optimised hiring process by designing interview questions for junior candidates.",
     ],
     duties: [

@@ -7,7 +7,7 @@
     >
       <img
         src="{{ projectItem.gifURL }}"
-        class="img-fluid"
+        class="phone-center-gif img-fluid"
         alt=""
         width="300"
         height="300"
@@ -15,13 +15,13 @@
     </div>
     <div class="col">
       <div class="card-block px-2">
-        <h4 class="card-title">{{ projectItem.title }}</h4>
-        <p class="card-text">
+        <h4 class="phone-center-text card-title">{{ projectItem.title }}</h4>
+        <p class="phone-center-text card-text">
           {{ projectItem.about }}
         </p>
         <a
           href="{{ projectItem.gitURL }}"
-          class="btn btn-brown btn-space"
+          class="phone-centre-button btn btn-brown btn-space"
           target="_blank"
         >
           <fa-icon [icon]="faGithub"></fa-icon>
@@ -32,7 +32,7 @@
           link to a /api-project component if projectItem.isAPI === true-->
         <button
           type="button"
-          class="btn btn-brown btn-space"
+          class="phone-centre-button btn btn-brown btn-space"
           [routerLink]="
             projectItem.api
               ? ['/api-project', projectItem.id]
@@ -46,7 +46,7 @@
         <button
           *ngIf="projectItem.live"
           type="button"
-          class="btn btn-brown btn-space"
+          class="phone-centre-button btn btn-brown btn-space"
         >
           <a href="{{ projectItem.liveURL }}" target="_blank"
             ><fa-icon [icon]="faExternalLinkAlt"></fa-icon> Live Link</a

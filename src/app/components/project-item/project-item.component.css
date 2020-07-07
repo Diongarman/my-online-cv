@@ -2,3 +2,30 @@
   background-color: #8080804a;
   color: #808080fb;
 }
+
+
+
+@media only screen 
+and (max-device-width : 768px) {
+    /* Styles */
+
+    .phone-center-text {
+      text-align: center;
+    }
+
+    .phone-center-gif {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+
+    .phone-centre-button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      margin-bottom: 3vw;
+    }
+}
